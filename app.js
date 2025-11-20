@@ -119,6 +119,7 @@ app.get("/", (req, res) => {
 // Signup Route
 app.post("/signup", async (req, res) => {
     const { name, email, password } = req.body;
+ alert(name,password);
 
     try {
         // Check existing email
