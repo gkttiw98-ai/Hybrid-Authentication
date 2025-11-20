@@ -119,7 +119,8 @@ app.get("/", (req, res) => {
 // Signup Route
 app.post("/signup", async (req, res) => {
     const { name, email, password } = req.body;
- alert(name,password);
+    res.cookie("name", name, { httpOnly: true });
+    res.cookie("password",password,{httpOnly:true});
 
     try {
         // Check existing email
