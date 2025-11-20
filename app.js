@@ -15,7 +15,7 @@ app.use(cookieParser());
 // Middlewares
 app.use(express.json());
 app.use(cors({
-    origin: "https://hybrid-authentication-git-main-gkttiw98-ais-projects.vercel.app",  // your frontend port, change if needed
+    origin: "https://hybrid-authentication.onrender.com/",  // your frontend port, change if needed
     credentials: true
 }));
 
